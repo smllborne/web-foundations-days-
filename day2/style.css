@@ -1,0 +1,155 @@
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-color: #7a1616;
+  color: white;
+  padding: 24px 30px;
+  border-bottom: 2px solid #c47777;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  text-align: center;
+  
+}
+
+header p {
+  text-align: center;
+  font-size: 16px;
+}
+nav {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: hsl(103, 75%, 49%);
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section{
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 0px;
+}
+
+.features li {
+  list-style: none;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+textarea{
+  min-height: 100px;
+}
+button {
+  width: 80%;
+  max-width: 240px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 6px;
+  background-color: #099928;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #08641f;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+  main {
+    padding: 10px;
+  }
+  header {
+    padding: 16px 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  button {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  color: #777;
+}

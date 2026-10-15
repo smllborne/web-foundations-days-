@@ -1,5 +1,3 @@
-PRAGMA foreign_keys = ON;
-
 CREATE TABLE students (
     student_id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,

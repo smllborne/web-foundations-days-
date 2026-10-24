@@ -1,0 +1,7 @@
+# Day 8 Reflection
+
+**The most difficult concept.** For me it was thinking in numbers instead of guesses. When I built QuickNotes, "it works on my screen" was enough. Then the course asked: what happens with 1 million users? I could not picture it, so I froze. I overcame it by breaking it into small steps: users per day, requests per second, then the busiest minute. Writing the estimates for TicketHub made it click. Normal traffic is about 6 requests per second, but a big sale is hundreds of times more, so the design must be built for the spike, not the average. Transactions were also hard, but the idea of "one seat, one winner, decided by the database" finally made them clear to me.
+
+**What I would improve in my capstone.** The feedback I received was that my documents explained *what* I chose but not always *why*, and that my architecture was missing detail on what happens when something fails. If I redo it, I would add a trade-offs section to every document, show how each component survives a crash, and make my API examples show error responses, not only success cases. This is what I tried to do properly in TicketHub.
+
+**What I will learn next.** I want to learn backend development properly: building a real API with Node.js and a SQL database, so I can test a hold-and-purchase flow myself instead of only describing it. After that, I want to learn caching and deployment, so I can see how a system really behaves under load.
